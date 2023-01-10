@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Eng_Word</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!--Icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body data-bs-theme="dark">
+    <!--Navbar Start-->
+    <div class="fixed-top">
+        <p>
+            <button class="btn btn-dark rounded-0 border-end border-bottom" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </p>
+        <div style="min-height: 120px;">
+            <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                <div class="card card-body" style="width: 200px;">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Noun">Noun Sentence</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Verb">Verb sentence</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#word">Word</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Navbar End-->
+    <!--Content Start-->
+    <div class="container mt-5">
+        <!--Noun Sentence Start-->
+        <div id="Noun" class="my-5 w-75 mx-auto d-block">
+            <table class="table caption-top">
+                <caption>Noun sentence (BE)</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Net Zaman</th>
+                        <th scope="col">Süreç Zaman</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">
+                            <h4>present</h4>
+                        </th>
+                        <td>
+                            <p>i - <span class="text-info">am</span></p>
+                            <p>you, we, they - <span class="text-info">are</span></p>
+                            <p>he, she, it - <span class="text-info">is</span></p>
+                        </td>
+                        <td>
+                            <p>i, you, we, they - <span class="text-warning">have been</span></p>
+                            <p>he, she, it - <span class="text-warning">has been</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <h4>Past</h4>
+                        </th>
+                        <td>
+                            <p>i, <span class="text-warning">was</span></p>
+                            <p>you, we, they - <span class="text-warning">were</span></p>
+                            <p>he, she, it - <span class="text-warning">was</span></p>
+                        </td>
+                        <td>
+                            <p class="text-success-emphasis">had been</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <h4>future</h4>
+                        </th>
+                        <td class="text-success-emphasis">
+                            <p>will be</p>
+                            <p>
+                                am, is, are going to be
+                            </p>
+                        </td>
+                        <td class="text-info">
+                            <p>will have been</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!--Noun Sentence End-->
+        <br />
+        <!--Verb Sentence Start-->
+        <div id="Verb" class="my-5">
+            <div class="row">
+                <div class="col-12">
+                    <table class="table caption-top">
+                        <caption>Verb sentence</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Present</th>
+                                <th scope="col">Past</th>
+                                <th scope="col">Future</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">
+                                    <h4>Simple</h4>
+                                </th>
+                                <td>
+                                    <p>i, you, we, they - <span class="text-warning">V1</span></p>
+                                    <p>he, she, it - <span class="text-primary-emphasis">Vs</span></p>
+                                </td>
+                                <td>
+                                    <p><span class="text-success-emphasis">V2</span></p>
+                                </td>
+                                <td>
+                                    <p>will + <span class="text-warning">V1</span></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <h4>Continious</h4>
+                                </th>
+                                <td>
+                                    <p>am, is, are + <span class="text-danger-emphasis">Ving</span></p>
+                                </td>
+                                <td>
+                                    <p>was, were + <span class="text-danger-emphasis">Ving</span></p>
+                                </td>
+                                <td>
+                                    <p>will + be + <span class="text-danger-emphasis">Ving</span></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <h4>Perfect</h4>
+                                </th>
+                                <td>
+                                    <p>have, has + <span class="text-info">V3</span></p>
+                                </td>
+                                <td>
+                                    <p>had + <span class="text-info">V3</span></p>
+                                </td>
+                                <td>
+                                    <p>will + have + <span class="text-info">V3</span></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <h4>Perfect Continious</h4>
+                                </th>
+                                <td>
+                                    <p>have, has + been + <span class="text-danger-emphasis">Ving</span></p>
+                                </td>
+                                <td>
+                                    <p>had + been + <span class="text-danger-emphasis">Ving</span></p>
+                                </td>
+                                <td>
+                                    <p>will + have + been + <span class="text-danger-emphasis">Ving</span></p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="col-5">
+
+                    <table class="table caption-top table-bordered">
+                        <thead>
+                            <tr>
+                                <th scope="col">V1 – Base Form</th>
+                                <th scope="col">V2 – Past Simple</th>
+                                <th scope="col">V3 – Past Participle</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    be
+                                </td>
+                                <td>
+                                    was, were
+                                </td>
+                                <td>
+                                    been
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <ul class="list-group">
+                        <li class="list-group-item"><span class="text-warning">Future</span>: Will</li>
+                        <li class="list-group-item"><span class="text-danger-emphasis">Continious</span>: Be + Ving</li>
+                        <li class="list-group-item"><span class="text-info">Perfect</span>: Have, Has + V3</li>
+                        <li class="list-group-item"><span class="text-info">Perfect</span> <span class="text-danger-emphasis">Continious</span>: been</li>
+                    </ul>
+                </div>
+                <div class="col-7">
+                    <table class="table caption-top table-bordered">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Present</th>
+                                <th scope="col">Past</th>
+                                <th scope="col">Future</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">
+                                    <h4>Simple</h4>
+                                </th>
+                                <td>
+                                    <p>does + <span class="text-warning">V1</span></p>
+                                    <p>(AR, ER)</p>
+                                </td>
+                                <td>
+                                    <p>did + <span class="text-warning">V1</span></p>
+                                    <p>(DI, Dİ)</p>
+                                </td>
+                                <td>
+                                    <p>won't + <span class="text-warning">V1</span></p>
+                                    <p>(ECEK, ACAK)</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <h4>Continious</h4>
+                                </th>
+                                <td>
+                                    <p>(YOR)</p>
+                                </td>
+                                <td>
+                                    <p>(YORDU)</p>
+                                </td>
+                                <td>
+                                    (YOR OLACAK)
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <h4>Perfect</h4>
+                                </th>
+                                <td>
+                                    <p>(DI, Dİ)</p>
+                                </td>
+                                <td>
+                                    <p>(MIŞTI, MİŞTİ)</p>
+                                </td>
+                                <td>
+                                    <p>(MIŞ, MİŞ OLACAK)</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <h4>Perfect Continious</h4>
+                                </th>
+                                <td>
+                                    <p>(YOR)</p>
+                                </td>
+                                <td>
+                                    <p>(YORDU)</p>
+                                </td>
+                                <td>
+                                    <p>(YOR OLACAK)</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-5">
+
+                </div>
+                <div class="col-12 mb-3">
+                    <img src="https://i0.wp.com/englishlessonsbrighton.co.uk/wp-content/uploads/2013/05/english-tenses-infographic.jpg?ssl=1"
+                        class="img-fluid" alt="...">
+                </div>
+            </div>
+        </div>
+        <!--Verb Sentence End-->
+        <br />
+        <!--Word Start-->
+        <div id="word" class="my-5">
+            <h1 class="text-center">word memorization</h1>
+            <hr />
+            <div id="content" data-bs-theme="dark">
+            </div>
+        </div>
+        <!--Word End-->
+    </div>
+    <!--Content End-->
+
+
+    <script src="eng_word.js"></script>
+    <script>
+        let contentDOM = document.querySelector("#content");
+        let text = "";
+        let altText = "";
+        eng_word.forEach(element => {
+            console.log(element);
+            altText = "";
+            for (let x of element.mean) {
+                altText += `
+                            <div class="d-flex justify-content-between">
+                                <h5>${x.trWord}</h5>
+                                <p>${x.exmTr}</p>
+                                <p>${x.exmEng}</p>
+                            </div>
+                            `
+            }
+            text = `<div class="row m-3">
+                        <div class="col-3 d-flex align-items-center">
+                            <h1>${element.word}</h1>
+                        </div>
+                        <div class="col-9">
+                            ${altText}
+                        </div>
+                    </div><hr />`;
+            contentDOM.innerHTML += text;
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
