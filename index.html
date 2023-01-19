@@ -205,7 +205,8 @@
                         <li class="list-group-item"><span class="text-warning">Future</span>: Will</li>
                         <li class="list-group-item"><span class="text-danger-emphasis">Continious</span>: Be + Ving</li>
                         <li class="list-group-item"><span class="text-info">Perfect</span>: Have, Has + V3</li>
-                        <li class="list-group-item"><span class="text-info">Perfect</span> <span class="text-danger-emphasis">Continious</span>: been</li>
+                        <li class="list-group-item"><span class="text-info">Perfect</span> <span
+                                class="text-danger-emphasis">Continious</span>: been</li>
                     </ul>
                 </div>
                 <div class="col-md-7">
@@ -293,7 +294,9 @@
         <div id="word" class="my-5">
             <h1 class="text-center">word memorization</h1>
             <hr />
-            <div id="content" data-bs-theme="dark">
+            <div data-bs-theme="dark" style="overflow-x: auto;">
+                <table id="content" class="table table-bordered">
+                </table>
             </div>
         </div>
         <!--Word End-->
@@ -303,31 +306,40 @@
 
     <script src="eng_word.js"></script>
     <script>
-        let contentDOM = document.querySelector("#content");
-        let text = "";
-        let altText = "";
-        eng_word.forEach(element => {
-            console.log(element);
-            altText = "";
-            for (let x of element.mean) {
-                altText += `
-                            <div class="d-flex justify-content-between">
-                                <h5>${x.trWord}</h5>
-                                <p>${x.exmTr}</p>
-                                <p>${x.exmEng}</p>
-                            </div>
-                            `
-            }
-            text = `<div class="row m-3">
-                        <div class="col-3 d-flex align-items-center">
-                            <h1>${element.word}</h1>
-                        </div>
-                        <div class="col-9">
-                            ${altText}
-                        </div>
-                    </div><hr />`;
-            contentDOM.innerHTML += text;
-        });
+        function createTable() {
+            let contentDOM = document.querySelector("#content");
+            let text = ``;
+            let altText = "";
+            let first = true;
+
+            eng_word.forEach(element => {
+                console.log(element);
+                altText = "";
+                first = true;
+                for (let x of element.mean) {
+                    if (first) {
+                        first = false;
+                        altText += `
+                        <th class="p-3">${x.trWord}</th>
+                        <th class="p-3">${x.exmEng}</th>
+                        <th class="p-3">${x.exmTr}</th>
+                    </tr>`;
+                    }
+                    else {
+                        altText += `
+                        <tr>
+                            <th class="p-3">${x.trWord}</th>
+                            <th class="p-3">${x.exmEng}</th>
+                            <th class="p-3">${x.exmTr}</th>
+                        </tr>`;
+                    }
+
+                }
+                text = `<tr><th rowspan="${element.mean.length}" style="text-align: center; vertical-align: middle;"><span class="h3">${element.word}</span></th>${altText}<tr><td colspan="4" style="background-color:#${Math.floor(Math.random() * 9) + 450}"></td></tr>`;
+                contentDOM.innerHTML += text;
+            });
+        }
+        createTable();
     </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"

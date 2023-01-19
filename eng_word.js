@@ -57,18 +57,28 @@ let eng_word = [
         mean: [
             {
                 trWord:"tarafından",
+                exmEng:"She was examined by a doctor.",
+                exmTr:"Bir doktor tarafından muayene edildi."
             },
             {
                 trWord:"ile, yoluyla, vasıtasıyla",
+                exmEng:"We'll get there by car.",
+                exmTr:"Oraya arabayla gideceğiz."
             },
             {
                 trWord:"... dan tutarak, dokunarak; ...erek, arak",
+                exmEng:"She grabbed me by the arm.",
+                exmTr:"Kolumdan tuttu."
             },
             {
                 trWord:"yanında, yanıbaşında",
+                exmEng:"A small child stood by her side.",
+                exmTr:"Yanında küçük bir çocuk duruyordu."
             },
             {
                 trWord:"... e kadar, ... saatine/tarihine kadar",
+                exmEng:"Applications have to be in by the 31st.",
+                exmTr:"Başvurular 31'ine kadar yapılmalıdır."
             },
         ]
     },
@@ -77,25 +87,104 @@ let eng_word = [
         mean: [
             {
                 trWord:"zor",
+                exmEng:"He's had a tough time at work recently.",
+                exmTr:"Son zamanlarda iş yerinde zor zamanlar geçirdi."
             },
             {
                 trWord:"sert, katı",
+                exmEng:"tough new laws on noise pollution",
+                exmTr:"gürültü kirliliğine ilişkin sert yeni yasalar"
             },
             {
                 trWord:"güçlü, dayanıklı, sağlam",
+                exmEng:"a tough guy",
+                exmTr:"sert bir adam"
             },
         ]
     },
     {
         word: "throughout",
-        mean: []
+        mean: [
+            {
+                trWord:"her tarafı, her tarafında",
+                exmEng:"The same laws apply throughout much of Europe.",
+                exmTr:"Avrupa'nın çoğu yerinde aynı yasalar geçerlidir.",
+            },
+            {
+                trWord:"süresince, boyunca",
+                exmEng:"-",
+                exmTr:"-"
+            },
+        ]
     },
     {
         word: "through",
-        mean: []
+        mean: [
+            {
+                trWord:"...ın/in içinden; ...dan/den geçerek",
+                exmEng:"-",
+                exmTr:"-"
+            },
+        ]
     },
     {
         word: "though",
-        mean: []
-    }
+        mean: [
+            {
+                trWord:"-",
+                exmEng:"-",
+                exmTr:"-"
+            },
+        ]
+    },
+    {
+        word: "Benefits",
+        mean: [
+            {
+                trWord:"-",
+                exmEng:"-",
+                exmTr:"-"
+            },
+        ]
+    },
+    {
+        word: "Foundation",
+        mean: [
+            {
+                trWord:"-",
+                exmEng:"-",
+                exmTr:"-"
+            },
+        ]
+    },
+    {
+        word: "constraints",
+        mean: [
+            {
+                trWord:"-",
+                exmEng:"-",
+                exmTr:"-"
+            },
+        ]
+    },
+    {
+        word: "law",
+        mean: [
+            {
+                trWord:"yasa, kanun",
+                exmEng:"-",
+                exmTr:"-"
+            },
+        ]
+    },
+    {
+        word: "-",
+        mean: [
+            {
+                trWord:"-",
+                exmEng:"-",
+                exmTr:"-"
+            },
+        ]
+    },
 ]
