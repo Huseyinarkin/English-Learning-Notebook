@@ -268,6 +268,26 @@ let eng_word = [
         ]
     },
     {
+        word: "dependence",
+        mean: [
+            {
+                trWord:"bağımlılık, yardıma muhtaç olma",
+                exmEng:"Our society needs to reduce its dependence on the car.",
+                exmTr:"Toplumumuzun arabaya olan bağımlılığını azaltması gerekiyor."
+            },
+            {
+                trWord:"ihtiyaç",
+                exmEng:"the charity’s dependence on public donations.",
+                exmTr:"hayır kurumunun kamu bağışlarına bağımlılığı."
+            },
+            {
+                trWord:"ilişki, bağ",
+                exmEng:"the mutual dependence of the various parts of the human body",
+                exmTr:"insan vücudunun çeşitli bölümlerinin karşılıklı bağımlılığı"
+            },
+        ]
+    },
+    {
         word: "-",
         mean: [
             {
