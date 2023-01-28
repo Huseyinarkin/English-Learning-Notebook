@@ -112,8 +112,18 @@ let eng_word = [
             },
             {
                 trWord:"süresince, boyunca",
-                exmEng:"-",
-                exmTr:"-"
+                exmEng:"He yawned throughout the performance.",
+                exmTr:"Performans boyunca esnedi."
+            },
+            {
+                trWord:"her yerinde, bütün …-de",
+                exmEng:"They searched throughout the house.",
+                exmTr:"Evin her yerini aradılar."
+            },
+            {
+                trWord:"başından sonuna kadar, boyunca",
+                exmEng:"She complained throughout the journey.",
+                exmTr:"Yolculuk boyunca şikayet etti."
             },
         ]
     },
@@ -122,8 +132,13 @@ let eng_word = [
         mean: [
             {
                 trWord:"...ın/in içinden; ...dan/den geçerek",
-                exmEng:"-",
-                exmTr:"-"
+                exmEng:"The River Seine flows through Paris.",
+                exmTr:"Seine Nehri Paris'in içinden akar."
+            },
+            {
+                trWord:"boyunca; başından sonuna dek; süresince",
+                exmEng:"He worked through the night.",
+                exmTr:"Gece boyunca çalıştı."
             },
         ]
     },
@@ -131,9 +146,14 @@ let eng_word = [
         word: "though",
         mean: [
             {
-                trWord:"-",
-                exmEng:"-",
-                exmTr:"-"
+                trWord:"..dığı/diği halde; ...sa/se de; her ne kadar",
+                exmEng:"Nina didn't phone, even though she said she would.",
+                exmTr:"Nina arayacağını söylemesine rağmen aramadı."
+            },
+            {
+                trWord:"ama, bununla beraber",
+                exmEng:"They're coming next week, though I don't know when.",
+                exmTr:"Gelecek hafta gelecekler ama ne zaman bilmiyorum."
             },
         ]
     },
@@ -141,9 +161,9 @@ let eng_word = [
         word: "Benefits",
         mean: [
             {
-                trWord:"-",
-                exmEng:"-",
-                exmTr:"-"
+                trWord:"kâr, fayda, yarar, çıkar, kazanç",
+                exmEng:"I've had the benefit of a happy childhood.",
+                exmTr:"Mutlu bir çocukluğun avantajını yaşadım."
             },
         ]
     },
@@ -151,9 +171,14 @@ let eng_word = [
         word: "Foundation",
         mean: [
             {
-                trWord:"-",
-                exmEng:"-",
-                exmTr:"-"
+                trWord:"temel, esas, asıl",
+                exmEng:"Jefferson's document formed the foundation of a new nation.",
+                exmTr:"Jefferson'ın belgesi yeni bir ulusun temelini oluşturdu."
+            },
+            {
+                trWord:"kurma, kuruluş, tesis",
+                exmEng:"the foundation of a new state",
+                exmTr:"yeni bir devletin temeli"
             },
         ]
     },
@@ -161,9 +186,9 @@ let eng_word = [
         word: "constraints",
         mean: [
             {
-                trWord:"-",
-                exmEng:"-",
-                exmTr:"-"
+                trWord:"sınırlama, zorlama, kısıtlama, baskı",
+                exmEng:"There are constraints on the medicines doctors can prescribe.",
+                exmTr:"Doktorların yazabileceği ilaçlar konusunda kısıtlamalar vardır."
             },
         ]
     },
@@ -172,8 +197,73 @@ let eng_word = [
         mean: [
             {
                 trWord:"yasa, kanun",
-                exmEng:"-",
-                exmTr:"-"
+                exmEng:"There are laws against drinking in the street.",
+                exmTr:"Sokakta içki içmeye karşı yasalar var."
+            },
+        ]
+    },
+    {
+        word: "against",
+        mean: [
+            {
+                trWord:"karşı olma",
+                exmEng:"Andrew wants to change offices but I'm against it.",
+                exmTr:"Andrew ofis değiştirmek istiyor ama ben buna karşıyım."
+            },
+            {
+                trWord:"karşı yarışma",
+                exmEng:"Liverpool is playing against AC Milan.",
+                exmTr:"Liverpool AC Milan'a karşı oynuyor."
+            },
+        ]
+    },
+    {
+        word: "offer",
+        mean: [
+            {
+                trWord:"teklif etmek, sunmak",
+                exmEng:"They offered me a job.",
+                exmTr:"Bana bir iş teklif ettiler."
+            },
+            {
+                trWord:"önermek, teklif etmek",
+                exmEng:"He offered to get me a cab.",
+                exmTr:"Bana bir taksi tutmayı teklif etti."
+            },
+            {
+                trWord:"vermek, sağlamak, sunmak",
+                exmEng:"to offer advice",
+                exmTr:"tavsiye vermek"
+            },
+        ]
+    },
+    {
+        word: "instance",
+        mean: [
+            {
+                trWord:"örnek, vaka",
+                exmEng:"There have been several instances of violence in the school.",
+                exmTr:"Okulda çok sayıda şiddet olayı yaşandı."
+            },
+            {
+                trWord:"örnek, misal",
+                exmEng:"As a social worker, he saw many instances of extreme poverty.",
+                exmTr:"Bir sosyal hizmet uzmanı olarak, birçok aşırı yoksulluk örneği gördü."
+            },
+        ]
+    },
+    {
+        word: "claim",
+        mean: [
+            {
+                trWord:"iddia etmek, ileri sürmek",
+                exmEng:"She claimed that the dog attacked her.",
+                exmTr:"köpeğin kendisine saldırdığını iddia etti."
+            },
+            {
+                trWord:"talep etmek, sahiplenmek, hak iddia etmek",
+                exmEng:"If no one claims the watch, then you can keep it.",
+                exmTr:"Saati kimse talep etmezse sizde kalabilir."
             },
         ]
     },
