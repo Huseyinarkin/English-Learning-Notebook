@@ -16,14 +16,14 @@
 
 <body data-bs-theme="dark">
     <!--Navbar Start-->
-    <div class="fixed-top">
+    <div class="fixed-top" style="width: 50px;">
         <p>
             <button class="btn btn-dark rounded-0 border-end border-bottom" type="button" data-bs-toggle="collapse"
                 data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
                 <i class="fa-solid fa-bars"></i>
             </button>
         </p>
-        <div style="min-height: 120px;">
+        <div>
             <div class="collapse collapse-horizontal" id="collapseWidthExample">
                 <div class="card card-body" style="width: 200px;">
                     <ul class="nav flex-column">
@@ -310,32 +310,19 @@
             let contentDOM = document.querySelector("#content");
             let text = ``;
             let altText = "";
-            let first = true;
 
             eng_word.forEach(element => {
                 console.log(element);
                 altText = "";
-                first = true;
                 for (let x of element.mean) {
-                    if (first) {
-                        first = false;
-                        altText += `
+
+                    altText += `
                         <th class="p-3">${x.trWord}</th>
                         <th class="p-3">${x.exmEng}</th>
                         <th class="p-3">${x.exmTr}</th>
                     </tr>`;
-                    }
-                    else {
-                        altText += `
-                        <tr>
-                            <th class="p-3">${x.trWord}</th>
-                            <th class="p-3">${x.exmEng}</th>
-                            <th class="p-3">${x.exmTr}</th>
-                        </tr>`;
-                    }
-
                 }
-                text = `<tr><th rowspan="${element.mean.length}" style="text-align: center; vertical-align: middle;"><span class="h3">${element.word}</span></th>${altText}<tr><td colspan="4" style="background-color:#${Math.floor(Math.random() * 9) + 450}"></td></tr>`;
+                text = `<tr><th rowspan="${element.mean.length}" style="text-align: center; vertical-align: middle;" class="position-relative"><div class="position-absolute top-0"><a href="https://dictionary.cambridge.org/tr/s%C3%B6zl%C3%BCk/ingilizce-t%C3%BCrk%C3%A7e/${element.word}" target="_blank"><i class="fas fa-link"></i></a></div><span class="h3">${element.word}</span></th>${altText}<tr><td colspan="4" style="background-color:#${Math.floor(Math.random() * 9) + 450}"></td></tr>`;
                 contentDOM.innerHTML += text;
             });
         }
