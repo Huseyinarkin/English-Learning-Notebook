@@ -11,6 +11,12 @@ let eng_word = [
                 exmTr:"Planlarımız hakkında konuştuk."
             },
             {
+                trWord:"bir yerde ya da orada rastgele bulunma, oralarda olma",                
+                
+                exmEng:"They were creeping about the garden.",
+                exmTr:"Bahçede sürünüyorlardı."
+            },
+            {
                 trWord:"yaklaşık, aşağı yukarı",                
                 
                 exmEng:"The nearest town is about five miles away.",
@@ -103,6 +109,51 @@ let eng_word = [
         ]
     },
     {
+        word: "though",
+        mean: [
+            {
+                trWord:"..dığı/diği halde; ...sa/se de; her ne kadar",
+                exmEng:"Nina didn't phone, even though she said she would.",
+                exmTr:"Nina arayacağını söylemesine rağmen aramadı."
+            },
+            {
+                trWord:"ama, bununla beraber",
+                exmEng:"They're coming next week, though I don't know when.",
+                exmTr:"Gelecek hafta gelecekler ama ne zaman bilmiyorum."
+            },
+        ]
+    },
+    {
+        word: "thought",
+        mean: [
+            {
+                trWord:"düşünce, fikir",
+                exmEng:"Do you have any thoughts about/on where you want to spend Christmas?",
+                exmTr:"Noel'i nerede geçirmek istediğiniz hakkında/hakkında herhangi bir fikriniz var mı?"
+            },
+            {
+                trWord:"düşünme",
+                exmEng:"She sat staring at the picture, deep in thought.",
+                exmTr:"Derin düşüncelere dalmış, resme bakıyordu."
+            },
+        ]
+    },
+    {
+        word: "through",
+        mean: [
+            {
+                trWord:"...ın/in içinden; ...dan/den geçerek",
+                exmEng:"The River Seine flows through Paris.",
+                exmTr:"Seine Nehri Paris'in içinden akar."
+            },
+            {
+                trWord:"boyunca; başından sonuna dek; süresince",
+                exmEng:"He worked through the night.",
+                exmTr:"Gece boyunca çalıştı."
+            },
+        ]
+    },
+    {
         word: "throughout",
         mean: [
             {
@@ -124,36 +175,6 @@ let eng_word = [
                 trWord:"başından sonuna kadar, boyunca",
                 exmEng:"She complained throughout the journey.",
                 exmTr:"Yolculuk boyunca şikayet etti."
-            },
-        ]
-    },
-    {
-        word: "through",
-        mean: [
-            {
-                trWord:"...ın/in içinden; ...dan/den geçerek",
-                exmEng:"The River Seine flows through Paris.",
-                exmTr:"Seine Nehri Paris'in içinden akar."
-            },
-            {
-                trWord:"boyunca; başından sonuna dek; süresince",
-                exmEng:"He worked through the night.",
-                exmTr:"Gece boyunca çalıştı."
-            },
-        ]
-    },
-    {
-        word: "though",
-        mean: [
-            {
-                trWord:"..dığı/diği halde; ...sa/se de; her ne kadar",
-                exmEng:"Nina didn't phone, even though she said she would.",
-                exmTr:"Nina arayacağını söylemesine rağmen aramadı."
-            },
-            {
-                trWord:"ama, bununla beraber",
-                exmEng:"They're coming next week, though I don't know when.",
-                exmTr:"Gelecek hafta gelecekler ama ne zaman bilmiyorum."
             },
         ]
     },
