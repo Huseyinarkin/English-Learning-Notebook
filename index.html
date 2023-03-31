@@ -14,10 +14,9 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <style>
-        #content a{
+        #content a {
             margin-right: 10px;
         }
-
     </style>
 </head>
 
@@ -323,12 +322,30 @@
                 for (let x of element.mean) {
 
                     altText += `
+                    <tr>
                         <th class="p-3">${x.trWord}</th>
                         <th class="p-3">${x.exmEng}</th>
                         <th class="p-3">${x.exmTr}</th>
                     </tr>`;
                 }
-                text = `<tr><th rowspan="${element.mean.length}" style="text-align: center; vertical-align: middle;" class="position-relative"><div class="position-absolute top-0"><a href="https://dictionary.cambridge.org/tr/s%C3%B6zl%C3%BCk/ingilizce-t%C3%BCrk%C3%A7e/${element.word}" target="_blank"><i class="fas fa-link"></i></a><a href="https://www.google.com/search?q=how+to+pronounce+${element.word}" target="_blank"><i class="fa-solid fa-headphones-simple"></i></a></div><span class="h3">${element.word}</span></th>${altText}<tr><td colspan="4" style="background-color:#${Math.floor(Math.random() * 9) + 450}"></td></tr>`;
+                text = `
+                    <tr>
+                        <th rowspan="${element.mean.length + 1}" style="text-align: center; vertical-align: middle;" class="position-relative">
+                            <div class="position-absolute top-0">
+                                <a href="https://dictionary.cambridge.org/tr/s%C3%B6zl%C3%BCk/ingilizce-t%C3%BCrk%C3%A7e/${element.word}" target="_blank">
+                                    <i class="fas fa-link"></i>
+                                </a>
+                                <a href="https://www.google.com/search?q=how+to+pronounce+${element.word}" target="_blank">
+                                    <i class="fa-solid fa-headphones-simple"></i>
+                                </a>
+                            </div>
+                            <span class="h3">${element.word}</span>
+                        </th>
+                    </tr>
+                        ${altText}
+                    <tr>
+                        <td colspan="4" style="background-color:#${Math.floor(Math.random() * 9) + 450}"></td>
+                    </tr>`;
                 contentDOM.innerHTML += text;
             });
         }
