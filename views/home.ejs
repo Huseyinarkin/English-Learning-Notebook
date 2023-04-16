@@ -301,7 +301,51 @@
             <h1 class="text-center">word memorization</h1>
             <hr />
             <div data-bs-theme="dark" style="overflow-x: auto;">
-                <table id="content" class="table table-bordered">
+                <table id="content" class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Link</th>
+                            <th scope="col">English</th>
+                            <th scope="col">Türçe</th>
+                            <th scope="col">rating</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% for(var i=0; i<data.length; i++) { %>
+                            <tr>
+                                <th scope="row" style="vertical-align: middle;">
+                                    <%= i+1 %>
+                                </th>
+
+                                <td style="vertical-align: middle;">
+                                    <a href="https://dictionary.cambridge.org/tr/s%C3%B6zl%C3%BCk/ingilizce-t%C3%BCrk%C3%A7e/$<%= data[i].word %>"
+                                        target="_blank">
+                                        <i class="fa-solid fa-link"></i>
+                                    </a>
+                                    <a href="https://www.google.com/search?q=how+to+pronounce+<%= data[i].word %>"
+                                        target="_blank">
+                                        <i class="fa-solid fa-headphones-simple"></i>
+                                    </a>
+                                </td>
+                                <td style="vertical-align: middle;">
+                                    <span class="h3"><%= data[i].word %></span>
+                                </td>
+                                <td>
+                                    <ul class="list-group list-group-flush">
+                                        <% for(var j=0; j<data[i].trWord.length; j++) { %>
+                                            <li class="list-group-item">
+                                                <%= data[i].trWord[j] %>
+                                            </li>
+                                            <% } %>
+                                    </ul>
+                                </td>
+                                <td style="vertical-align: middle;">
+                                    <%= data[i].rating %>
+                                </td>
+                            </tr>
+                            <% } %>
+                    </tbody>
                 </table>
             </div>
         </div>
@@ -349,7 +393,6 @@
                 contentDOM.innerHTML += text;
             });
         }
-        createTable();
     </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
