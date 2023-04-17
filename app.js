@@ -11,7 +11,7 @@ import mongoose from 'mongoose';
 
 const mongoUrl = process.env.MONGO_URL;
 const app = express()
-const port = 3000
+const port = process.env.PORT || 3000;
 
 app.get('/editWord', async (req, res) => {
 
