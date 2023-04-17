@@ -28,7 +28,7 @@ app.post('/editWord', async (req, res) => {
     mongoose.connect(mongoUrl);
     const newData = new Word({
         word: req.body.exampleInputWord,
-        trWord: req.body.exampleInputTrWord.split(","),
+        trWord: req.body.exampleInputTrWord.replaceAll("\r","").split("\n"),
         rating: 1
         // Add more fields as necessary
     });

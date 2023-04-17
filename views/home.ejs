@@ -15,7 +15,7 @@
 
     <style>
         #content a {
-            margin-right: 10px;
+            margin-bottom: 15px;
         }
     </style>
 </head>
@@ -341,7 +341,13 @@
                                     </ul>
                                 </td>
                                 <td style="vertical-align: middle;">
-                                    <%= data[i].rating %>
+                                    <% for(var j=0; j<5; j++) { %>
+                                        <% if(data[i].rating > j) {%>
+                                            <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                        <% } else { %>
+                                            <i class="fa-regular fa-star"></i>
+                                        <% } %>
+                                    <% } %>
                                 </td>
                             </tr>
                             <% } %>
