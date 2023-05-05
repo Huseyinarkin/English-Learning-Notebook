@@ -18,21 +18,47 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css" />
+
+    <!--Icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body>
+<body data-bs-theme="dark">
     <script>
         $(document).ready(function () {
             $('#example').DataTable();
         });
     </script>
+    <!--Navbar Start-->
+    <div class="fixed-top" style="width: 50px;">
+        <p>
+            <button class="btn btn-dark rounded-0 border-end border-bottom" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </p>
+        <div>
+            <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                <div class="card card-body" style="width: 200px;">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">Home</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Navbar End-->
     <div class="container">
         <!-- form Start -->
-        <div class="card mt-5 w-75 mx-auto">
-            <div class="card-header">
+        <div class="card mt-5 w-75 mx-auto bg-dark text-ligth" >
+            <div class="card-header" >
                 Word ekle
             </div>
-            <div class="card-body">
+            <div class="card-body" >
                 <form method="POST" action="/editWord">
                     <div class="mb-3">
                         <label for="exampleInputWord" class="form-label">Word</label>
@@ -42,8 +68,8 @@
                     </div>
                     <div class="mb-3">
                         <div class="form-floating">
-                            <textarea class="form-control" placeholder="Leave a comment here" id="exampleInputTrWord" name="exampleInputTrWord"
-                                style="height: 100px" required></textarea>
+                            <textarea class="form-control" placeholder="Leave a comment here" id="exampleInputTrWord"
+                                name="exampleInputTrWord" style="height: 100px" required></textarea>
                             <label for="floatingTextarea2">TrWords</label>
                         </div>
                     </div>
