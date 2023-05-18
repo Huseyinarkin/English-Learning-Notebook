@@ -38,7 +38,8 @@ app.post('/editWord', async (req, res) => {
     const newData = new Word({
         word: req.body.exampleInputWord,
         trWord: req.body.exampleInputTrWord.split("\n"),
-        rating: 1
+        rating: 1,
+        insertDate: Date.now()
         // Add more fields as necessary
     });
     await newData.save();

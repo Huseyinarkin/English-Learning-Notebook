@@ -6,7 +6,10 @@ const wordSchema = new mongoose.Schema({
     trWord: [String],
     rating:{
         type: Number
-    } 
+    },
+    insertDate:{
+        type:Date
+    }
     // Add more fields as necessary
 });
 

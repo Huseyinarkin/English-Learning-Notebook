@@ -112,10 +112,12 @@
         <!-- table end -->
         <script>
             async function deleteWord(element) {
-                const id = element.getAttribute("data-id");
-                const response = await fetch(`/editWord/?id=${id}`, { method: "delete" });
-                element.parentElement.parentElement.remove();
-                //location.reload();
+                if(confirm("Silmek istediğinizden emin misiniz ?")==true){
+                    const id = element.getAttribute("data-id");
+                    const response = await fetch(`/editWord/?id=${id}`, { method: "delete" });
+                    element.parentElement.parentElement.remove();
+                    //location.reload();
+                }
             }
         </script>
     </div>
